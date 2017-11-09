@@ -23,7 +23,7 @@ RUN set -ex \
   done
 
 ENV NPM_CONFIG_LOGLEVEL info
-ENV NODE_MAJOR 6
+ENV NODE_MAJOR 8
 
 RUN NODE_VERSION=$(curl -SL "https://nodejs.org/dist/index.tab" \
     | grep "^v$NODE_MAJOR" \
